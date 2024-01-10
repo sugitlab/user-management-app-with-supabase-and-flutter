@@ -10,8 +10,9 @@ class AccountPage extends StatefulWidget {
 }
 
 class _AccountPageState extends State<AccountPage> {
-  late final TextEditingController _usernameController;
-  late final TextEditingController _websiteController;
+  late final TextEditingController _usernameController =
+      TextEditingController();
+  late final TextEditingController _websiteController = TextEditingController();
 
   var _loading = false;
 

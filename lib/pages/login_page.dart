@@ -14,7 +14,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   bool _isLoading = false;
   bool _redirecting = false;
-  late final TextEditingController _emailController;
+  late final TextEditingController _emailController = TextEditingController();
   late final StreamSubscription<AuthState> _authStateSubscription;
 
   Future<void> _signIn() async {
@@ -27,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
         email: _emailController.text.trim(),
         emailRedirectTo: kIsWeb
             ? null
-            : "co.supabase.kgdfultdxbvytewyssdh://login-callback/",
+            : "com.sugitlab.user_management_app_with_supabase_and_flutter://login-callback/",
       );
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(

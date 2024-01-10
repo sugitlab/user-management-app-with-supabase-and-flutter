@@ -33,9 +33,9 @@
 			<dict>
 				<key>CFBundleTypeRole</key>
 				<string>Editor</string>
-				<key>CFBundleURLScheme</key>
+				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>co.supabase.kgdfultdxbvytewyssdh</string>
+					<string> com.sugitlab.user_management_app_with_supabase_and_flutter</string>
 				</array>
 			</dict>
 		</array>

@@ -5,11 +5,7 @@ import 'package:user_management_app_with_supabase_and_flutter/pages/login_page.d
 import 'package:user_management_app_with_supabase_and_flutter/pages/splash_page.dart';
 
 Future<void> main() async {
-  await Supabase.initialize(
-    url: "https://kgdfultdxbvytewyssdh.supabase.co",
-    anonKey:
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtnZGZ1bHRkeGJ2eXRld3lzc2RoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQ1NTE0MTIsImV4cCI6MjAyMDEyNzQxMn0.hdF7wIHitmhWdGlRbuf6AdpA1f1QUJrQAMMF39cm1G4",
-  );
+  await Supabase.initialize(url: "REPLACE_ME", anonKey: "REPLACE_ME");
   runApp(const MyApp());
 }
 
